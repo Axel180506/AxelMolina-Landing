@@ -1,0 +1,17 @@
+:root {
+  /* Paleta principal */
+  --color-principal: #465D70;   /* azul pizarra */
+  --color-secundario: #C5DCEB;  /* azul nube */
+  --color-terciario: #D7EDF4;   /* celeste hielo */
+  --color-acento: #D8D7E9;      /* lavanda grisácea */
+  /*Colores complementarios*/
+  --color-principal-oscuro: #30424F;
+  --color-principal-suave: #6C8598;
+  --color-texto: #263340;
+  --color-texto-claro: #5B6B77;
+  --color-fondo: #FBFDFE;
+  --color-blanco: #FFFFFF;
+  /* Tipografía */
+  --fuente-titulos: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --fuente-texto: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+}

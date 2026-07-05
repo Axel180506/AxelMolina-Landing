@@ -1,0 +1,221 @@
+/* Íconos */
+.icono-nimbus {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--color-terciario);
+  color: var(--color-principal);
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.icono-nimbus.claro {
+  background-color: rgba(255, 255, 255, 0.16);
+  color: var(--color-blanco);
+}
+
+/* Tarjetas de servicios */
+.tarjeta-servicio {
+  background-color: var(--color-blanco);
+  border: 1px solid #E1E8EC;
+  border-radius: 14px;
+  padding: 28px;
+  height: 100%;
+}
+
+.tarjeta-servicio:hover {
+  box-shadow: 0 8px 24px rgba(70, 93, 112, 0.12);
+}
+
+.tarjeta-servicio img {
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.tarjeta-servicio .enlace-servicio {
+  color: var(--color-principal);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+/* Planes empresariales */
+.tarjeta-plan {
+  background-color: var(--color-blanco);
+  border-radius: 14px;
+  padding: 28px;
+  height: 100%;
+  border: 2px solid #E1E8EC;
+  text-align: center;
+}
+
+.tarjeta-plan.destacado {
+  border-color: var(--color-principal);
+  box-shadow: 0 14px 34px rgba(70, 93, 112, 0.18);
+  position: relative;
+}
+
+.tarjeta-plan.destacado::before {
+  content: "Más elegido";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 5px 14px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.tarjeta-plan .precio {
+  font-family: var(--fuente-titulos);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-principal);
+  margin: 8px 0;
+}
+
+.tarjeta-plan .precio span {
+  font-size: 14px;
+  color: var(--color-texto-claro);
+  font-weight: 400;
+}
+
+.tarjeta-plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  text-align: left;
+}
+
+.tarjeta-plan ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-bottom: 10px;
+  color: var(--color-texto-claro);
+}
+
+.tarjeta-plan ul li i {
+  color: #4F8C6E;
+  margin-top: 3px;
+}
+
+/* Indicadores / datos destacados */
+.indicador {
+  text-align: center;
+  padding: 16px;
+}
+
+.indicador .numero {
+  font-family: var(--fuente-titulos);
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--color-blanco);
+  display: block;
+}
+
+.indicador .etiqueta {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Testimonios */
+.tarjeta-testimonio {
+  background-color: var(--color-blanco);
+  border-radius: 14px;
+  padding: 28px;
+  height: 100%;
+  box-shadow: 0 8px 24px rgba(70, 93, 112, 0.12);
+}
+
+.tarjeta-testimonio .estrellas {
+  color: #E3A83B;
+  margin-bottom: 8px;
+}
+
+.tarjeta-testimonio p.comentario {
+  color: var(--color-texto);
+  font-style: italic;
+}
+
+.tarjeta-testimonio .autor {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 16px;
+}
+
+.tarjeta-testimonio .autor .avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-terciario);
+  color: var(--color-principal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: var(--fuente-titulos);
+}
+
+.tarjeta-testimonio .autor strong {
+  display: block;
+  color: var(--color-principal);
+}
+
+.tarjeta-testimonio .autor small {
+  color: var(--color-texto-claro);
+}
+
+/* Formulario de contacto (llamada a la acción) */
+.formulario-nimbus {
+  background-color: var(--color-blanco);
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 14px 34px rgba(70, 93, 112, 0.18);
+  color: var(--color-texto);
+}
+
+.formulario-nimbus label {
+  font-weight: 600;
+  color: var(--color-principal);
+  margin-bottom: 5px;
+}
+
+.formulario-nimbus .form-control,
+.formulario-nimbus .form-select {
+  border-radius: 8px;
+  border: 1px solid #E1E8EC;
+  padding: 10px 14px;
+}
+
+.formulario-nimbus .form-control:focus,
+.formulario-nimbus .form-select:focus {
+  border-color: var(--color-principal);
+  box-shadow: 0 0 0 3px rgba(70, 93, 112, 0.15);
+}
+
+/* Media queries específicas de componentes */
+@media (min-width: 768px) {
+  .indicador .numero {
+    font-size: 46px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tarjeta-plan.destacado {
+    transform: scale(1.04);
+  }
+} 
